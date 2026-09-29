@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hello World!</title>
+    <title>Owens Vim tutorial</title>
     <script src='validate.js'></script>
      <style>
                    body{
@@ -10,16 +10,64 @@
 </head>
 <body>
     <header>
-        <h1>Hello World!</h1>
+        <h1>An introduction to VIM</h1>
     </header>
     <main>
         <section>
-            <h2>About Me</h2>
-            <p>This is my first web page.</p>
+            <h2>How to install vim on your computer(this is the easy part)
+            </h2>
+            <p><ol>
+                <li>Open the Terminal app on your Mac.</li>
+                <li>Type vim into your terminal to start the vim editor.</li>
+                <li>Then type :q to exit (press <kbd>Esc</kbd> before :q)
+            </ol>    </p>
+            <h3>Helpful vim tips and tricks</h3>
+            <ul>
+                <li>Vim can be customized, for example, you can do
+                    the command :syntax on to get colors for each
+                    command</li>
+                <li>To permanently get syntax on as well as some 
+                    other helpful features, you can use this code <pre>
+                    syntax enable
+                   
+                   filetype indent on
+                " set autoindent width to 4 spaces (see
+                " http://www.vim.org/tips/tip.php?tip_id=83)
+                set et
+                set sw=4
+                set smarttab
+
+                set background=dark
+                colorscheme desert
+
+                set columns=80
+                set colorcolumn=80
+                set nowrap
+
+                set number </pre>
+                    <li>You can use <kbd>o</kbd> to add a line directly
+                    below the line you are working on </li>
+                    <li>You can use <kbd> Shift + O </kbd>
+                        to add a line directly above the line you are working
+                     on </li>
+
+        <li>The most important thing is the save your work, when you want
+            to save a change use the command :wq instead</li>
+        <li> Add, commit, and push make up the most important part of vim,
+            adding your code, onto your awesome website! For example
+            you could use <kbd> git add index.htiml,
+                                git commit -m "this is an example(be specific here)", and 
+                                git push </kbd>
+            if you use all these correctly, your code should populate into
+            your website within a few minutes </li>
+        <li> To check your website without doing add, commit, and push, use
+            <kbd> open index.html </kbd> (index.html is my file name, yours
+            may be different) </kbd>
+            </ul>
         </section>
     </main>
     <footer>
-        <p>Made by me.</p>
+        <p>Made by Owen Maness, feel free to copy and add on! :)</p>
     </footer>
 </body>
 </html>
