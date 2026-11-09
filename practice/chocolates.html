@@ -160,12 +160,77 @@
                 place-items: center;
                 font-size: 2em;
             }
+           .star {
+  width: 200px;  
+  aspect-ratio: 1;
+  background: brown;
+  clip-path: polygon(50% 0,
+    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+   ); 
+  /* or more simple
+  clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+   */
+}
+            #chocolatestar {
+                grid-column-start:2;
+                grid-row-start:1;
+            }
+            .flower {
+  width: 200px; /* adjust to control the size */
+  aspect-ratio: 1;
+  --g:/20.56% 20.56% radial-gradient(#000 calc(71% - 1px),#0000 71%) no-repe mask: 100% 50% var(--g),93.301% 75% var(--g),75% 93.301% var(--g),50% ,0% 50% var(--g),6.699% 25% var(--g),25% 6.699% var(--g),50% 0% var(--g),75% 6.699% var(--g),93.301% 25% var(--g),radial-gradient(100% 100%,#000 38.366%,#0000 calc(38.366% + 1px));
+}
+            #chocolateflower{
+                background-color: brown;
+                grid-column-start:3;
+                grid-row-start:1;
+            }
+.triangle {
+  width: 180px;
+  aspect-ratio: 1/cos(30deg);
+  clip-path: polygon(50% 0,100% 100%,0 100%);
+  background: linear-gradient(45deg,#FA6900,#C02942);
+}
+            #chocolatetriangle{
+                background-color:brown;
+                grid-column-start:1;
+                grid-row-start:2;
+            }
+            #star2 {
+                grid-column-start:2;
+                grid-row-start:2;}
+        #star3 {
+            grid-column-start:2;
+            grid-row-start:3;}
+    .square {
+  width: 150px;
+  height: 150px;
+  background-color: brown;
+}
+            #chocolatesquare {
+                grid-column-start:1;
+                grid-row-start:3;
+            }
+            #square2 {
+                grid-column-start:3;
+                grid-row-start:3;
+            }
         </style>
     </head>
     <body>
         <h1>Here, I got you some chocolates &lt;3</h1>
         <div class="container">
+            <div class="square" id="square2"></div>
             <div class="heart" id="chocolateheart"></div>
+            <div class="star" id="chocolatestar"></div>
+            <div class="star" id="star2"></div>
+            <div class="star" id="star3"></div>
+            <div class="flower" id="chocolateflower"></div>
+            <div class="square" id="chocolatesquare"></div>
+            <div class="triangle" id="chocolatetriangle"></div>
             <div class="lilbits">
                 <div id="mnm">
                 m
