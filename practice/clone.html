@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; }
+    img { display: block; width: 100%; background: #ddd; }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    p { color: #555; line-height: 1.6; margin-bottom: 0.5rem; }
+    /* Layout */
+    .c1 {
+      padding: 1rem;
+    }
+    .c2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 1rem;
+    }
+    .c3 {
+      text-align: right;
+    }
+    .c4 {
+      display: grid;
+      grid:
+        'Image Image  text' auto
+        'stuff stuff2 morestuff' auto
+        / 1fr 1fr 1fr;
+      padding: 1rem;
+    }
+    .c5 {
+      grid-area: Image;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c6 {
+      grid-area: text;
+    }
+    .c7 {
+      grid-area: stuff;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c8 {
+      grid-area: stuff2;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c9 {
+      grid-area: morestuff;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c10 {
+      display: grid;
+      grid:
+        'a k u' auto
+        'b l v' auto
+        'c m w' auto
+        'd n x' auto
+        'e o y' auto
+        'f p z' auto
+        'g q ab' auto
+        'h r cd' auto
+        'i s ef' auto
+        'j t gh' auto
+        / 1fr 1fr 1fr;
+      padding: 2rem;
+    }
+    .c11 {
+      grid-area: a;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c12 {
+      grid-area: k;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c13 {
+      grid-area: u;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c14 {
+      grid-area: b;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c15 {
+      grid-area: l;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c16 {
+      grid-area: v;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c17 {
+      grid-area: c;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c18 {
+      grid-area: m;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c19 {
+      grid-area: w;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c20 {
+      grid-area: d;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c21 {
+      grid-area: n;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c22 {
+      grid-area: x;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c23 {
+      grid-area: e;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c24 {
+      grid-area: o;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c25 {
+      grid-area: y;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c26 {
+      grid-area: f;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c27 {
+      grid-area: p;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c28 {
+      grid-area: z;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c29 {
+      grid-area: g;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c30 {
+      grid-area: q;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c31 {
+      grid-area: ab;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c32 {
+      grid-area: h;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c33 {
+      grid-area: r;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c34 {
+      grid-area: cd;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c35 {
+      grid-area: i;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c36 {
+      grid-area: s;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c37 {
+      grid-area: ef;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c38 {
+      grid-area: j;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c39 {
+      grid-area: t;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c40 {
+      grid-area: gh;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c41 {
+      padding: 2rem;
+    }
+    .c42 {
+      display: grid;
+      grid:
+        'img  image blank blank text' auto
+        'info info  blank blank information' auto
+        'info info  blank blank information' auto
+        / 1fr 1fr 1fr 1fr 1fr;
+      padding: 0.5rem;
+    }
+    .c43 {
+      grid-area: img;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c44 {
+      grid-area: image;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c45 {
+      grid-area: text;
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c46 {
+      grid-area: info;
+    }
+    .c47 {
+      grid-area: information;
+    }
+  </style>
+</head>
+<body>
+<header class="c1">
+  <div class="c2">
+    <h1>Page Heading</h1>
+    <p class="c3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+</header>
+<main class="c4">
+  <img src="placeholder.jpg" alt="" class="c5">
+  <p class="c6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  <img src="placeholder.jpg" alt="" class="c7">
+  <img src="placeholder.jpg" alt="" class="c8">
+  <img src="placeholder.jpg" alt="" class="c9">
+</main>
+<section class="c10">
+  <img src="placeholder.jpg" alt="" class="c11">
+  <img src="placeholder.jpg" alt="" class="c12">
+  <img src="placeholder.jpg" alt="" class="c13">
+  <img src="placeholder.jpg" alt="" class="c14">
+  <img src="placeholder.jpg" alt="" class="c15">
+  <img src="placeholder.jpg" alt="" class="c16">
+  <img src="placeholder.jpg" alt="" class="c17">
+  <img src="placeholder.jpg" alt="" class="c18">
+  <img src="placeholder.jpg" alt="" class="c19">
+  <img src="placeholder.jpg" alt="" class="c20">
+  <img src="placeholder.jpg" alt="" class="c21">
+  <img src="placeholder.jpg" alt="" class="c22">
+  <img src="placeholder.jpg" alt="" class="c23">
+  <img src="placeholder.jpg" alt="" class="c24">
+  <img src="placeholder.jpg" alt="" class="c25">
+  <img src="placeholder.jpg" alt="" class="c26">
+  <img src="placeholder.jpg" alt="" class="c27">
+  <img src="placeholder.jpg" alt="" class="c28">
+  <img src="placeholder.jpg" alt="" class="c29">
+  <img src="placeholder.jpg" alt="" class="c30">
+  <img src="placeholder.jpg" alt="" class="c31">
+  <img src="placeholder.jpg" alt="" class="c32">
+  <img src="placeholder.jpg" alt="" class="c33">
+  <img src="placeholder.jpg" alt="" class="c34">
+  <img src="placeholder.jpg" alt="" class="c35">
+  <img src="placeholder.jpg" alt="" class="c36">
+  <img src="placeholder.jpg" alt="" class="c37">
+  <img src="placeholder.jpg" alt="" class="c38">
+  <img src="placeholder.jpg" alt="" class="c39">
+  <img src="placeholder.jpg" alt="" class="c40">
+</section>
+<section class="c41">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+</section>
+<footer class="c42">
+  <img src="placeholder.jpg" alt="" class="c43">
+  <img src="placeholder.jpg" alt="" class="c44">
+  <img src="placeholder.jpg" alt="" class="c45">
+  <p class="c46">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  <p class="c47">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+</footer>
+  <script>
+  (function() {
+    var s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/gh/gracehoppercenter/validate@1.0.5/validate.js";
+    s.async = false;
+    document.head.appendChild(s);
+  })();
+  </script>
+</body>
+</html>
