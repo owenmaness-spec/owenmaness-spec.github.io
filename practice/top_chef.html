@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; max-width: 1100px; margin: 0 auto; }
+    img { display: block; width: 100%; background: #ddd; }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    p { color: #555; line-height: 1.6; margin-bottom: 0.5rem; }
+    nav { display: flex; gap: 1rem; }
+    nav a { text-decoration: none; color: inherit; }
+    article { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
+    /* Layout */
+    .c1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    .c2 {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+    .c3 {
+      display: grid;
+      grid:
+        'a b c' auto
+        'a b f' auto
+        'd e g' auto
+        'd e h' auto
+        / 2fr 3fr 2fr;
+      padding: 2rem;
+    }
+    .c4 {
+      grid-area: a;
+      aspect-ratio: 8 / 3;
+    }
+    .c5 {
+      grid-area: b;
+      text-align: center;
+    }
+    .c6 {
+      grid-area: c;
+      text-align: center;
+    }
+    .c7 {
+      grid-area: f;
+      padding: 2rem;
+    }
+    .c8 {
+      padding: 0.5rem;
+    }
+    .c9 {
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c10 {
+      grid-area: d;
+    }
+    .c11 {
+      grid-area: e;
+      aspect-ratio: 8 / 3;
+    }
+    .c12 {
+      grid-area: g;
+      padding: 2rem;
+    }
+    .c13 {
+      padding: 0.5rem;
+    }
+    .c14 {
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c15 {
+      grid-area: h;
+      padding: 2rem;
+    }
+    .c16 {
+      padding: 0.5rem;
+    }
+    .c17 {
+      width: 65%;
+      aspect-ratio: 4 / 3;
+    }
+    .c18 {
+      padding: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+<header class="c1">
+  <img src="placeholder.jpg" alt="" class="c2">
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Work</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+<main class="c3">
+  <img src="placeholder.jpg" alt="" class="c4">
+  <h1 class="c5">Page Heading</h1>
+  <h2 class="c6">Section Heading</h2>
+  <section class="c7">
+    <article class="c8">
+      <img src="placeholder.jpg" alt="" class="c9">
+      <h2>Section Heading</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+    </article>
+  </section>
+  <p class="c10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  <img src="placeholder.jpg" alt="" class="c11">
+  <section class="c12">
+    <article class="c13">
+      <img src="placeholder.jpg" alt="" class="c14">
+      <h2>Section Heading</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+    </article>
+  </section>
+  <section class="c15">
+    <article class="c16">
+      <img src="placeholder.jpg" alt="" class="c17">
+      <h2>Section Heading</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+    </article>
+  </section>
+</main>
+<footer class="c18">
+
+</footer>
+  <script>
+  (function() {
+    var s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/gh/gracehoppercenter/validate@1.0.5/validate.js";
+    s.async = false;
+    document.head.appendChild(s);
+  })();
+  </script>
+</body>
+</html>
