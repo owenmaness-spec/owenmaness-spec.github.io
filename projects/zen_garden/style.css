@@ -5,3 +5,44 @@
 
   All of your CSS goes in this file.
 */
+body {
+    background-color: PapayaWhip;
+}
+
+.submenu {
+    display: none;
+    list-style: none;
+}
+
+.menu-item:hover .submenu,
+.menu-item:focus-within .submenu {
+    display: block;
+}
+
+#utility-nav ul { display: flex;
+ justify-content: space-evenly;
+list-style:none; 
+
+padding: 10px 20px;
+background-color: LemonChiffon;
+border: 2px black solid;
+
+
+}
+
+#main-nav  .menu {
+list-style:none;
+display: flex;
+justify-content:space-evenly;
+padding: 10px 20px;
+background-color: LemonChiffon;
+border: 2px black solid;
+
+
+}
+
+#branding a {display:flex;
+    justify-content:center;
+border: 2px black solid;
+
+}
